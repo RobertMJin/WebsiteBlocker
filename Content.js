@@ -254,7 +254,6 @@ const generateHTML = (pageName) => {
 let currentTime = new Date();
 currentTime = currentTime.toLocaleTimeString('it-IT');
 let hour = currentTime.substring(0, 2);
-
 switch (window.location.hostname) {
     case "www.youtube.com":
         if (parseInt(hour) > 8 && parseInt(hour) < 20) {
