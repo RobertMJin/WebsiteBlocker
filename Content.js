@@ -233,7 +233,6 @@ const generateSTYLES = () => {
   
 const generateHTML = (pageName) => {
     return `
-     
      <div id="clouds">
         <div class="cloud x1"></div>
         <div class="cloud x1_5"></div>

@@ -1,10 +1,21 @@
 {
     "name": "Website Blocker",
     "version": "0.0.1",
+    "version_name": "0.0.1 beta",
     "manifest_version": 3,
+    "description": "A custom website blocking extension.",
+    "icons": { 
+            "16": "icons/WebsiteBlockerIcon16x16.png",
+            "48": "icons/WebsiteBlockerIcon48x48.png",
+            "64": "icons/WebsiteBlockerIcon64x64.png",
+            "128": "icons/WebsiteBlockerIcon128x128.png"
+    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
+            "css": [
+                "css/styles.css"
+            ],
             "js": ["Content.js"]
         }
     ]
