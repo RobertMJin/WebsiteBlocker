@@ -1,7 +1,7 @@
 {
     "name": "Website Blocker",
-    "version": "0.0.1",
-    "version_name": "0.0.1 beta",
+    "version": "0.0.2",
+    "version_name": "0.0.2 development",
     "manifest_version": 3,
     "description": "A custom website blocking extension.",
     "icons": { 
@@ -13,10 +13,14 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "css": [
-                "css/styles.css"
-            ],
             "js": ["Content.js"]
         }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html"
+        
+    },
+    "permissions": [
+        "storage"
     ]
 }

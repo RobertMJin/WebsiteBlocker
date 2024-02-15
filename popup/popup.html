@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Blocker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="popup.css"> -->
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <p class="title">
+                <img src="/icons/WebsiteBlockerIcon128x128.png"alt="Website Blocker Icon"width="25"height="25">
+                Website Blocker
+            </p>
+            <div class="tabs">
+                <ul>
+                    <li class="is-active"><a>Block</a></li>
+                    <li><a>More Functionality Coming Soon</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <form action="popupscript.js">
+                    <label for="websiteURL">Add a URL of a Website to block:</label><br>
+                    <input class="input" type="text" id="websiteURL" name="websiteURL"><br><br>
+                    Add Schedule:<br>
+                    <div class="columns">
+                        <div class="column">
+                            <label for="startTime">Start:</label>
+                            <input class="input" type="time" id="startTime" name="startTime">
+                        </div>
+                        <div class="column is-half">
+                            <label for="endTime">End:</label>
+                            <input class="input" type="time" id="endTime" name="endTime">
+                        </div>
+                    </div>
+                </form>
+                <br>
+        
+                <label for="occurence">Occurence:</label>
+                <form class="select" action="popupscript.js">
+                    <select name="" id="">
+                        <option>Select Option</option>
+                        <option>Daily</option>
+                        <option>Every Monday</option>
+                        <option>Every Tuesday</option>
+                        <option>Every Wednesday</option>
+                        <option>Every Thursday</option>
+                        <option>Every Friday</option>
+                        <option>Every Saturday</option>
+                        <option>Every Sunday</option>
+                        <option>Weekdays Only</option>
+                        <option>Weekends Only</option>
+                        <option>Custom(Coming Soon)</option>
+                    </select>
+                </form>
+            </div>
+            <div class="box">
+                Current Website Name <br>
+                <form action="popupscript.js">
+                    Pause until <input class="input" type="time" step="1800" id="pauseTime" name="pauseTime">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

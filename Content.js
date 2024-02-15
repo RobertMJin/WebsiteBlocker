@@ -260,34 +260,4 @@ switch (window.location.hostname) {
             document.body.innerHTML = generateHTML("YOUTUBE");
             break;
         }
-    case "www.facebook.com":
-        if (parseInt(hour) > 8 && parseInt(hour) < 20) {
-            document.head.innerHTML = generateSTYLES();
-            document.body.innerHTML = generateHTML("YOUTUBE");
-            break;
-        }
-    case "www.netflix.com":
-        if (parseInt(hour) > 8 && parseInt(hour) < 20) {
-            document.head.innerHTML = generateSTYLES();
-            document.body.innerHTML = generateHTML("NETFLIX");
-            break;
-        }
-    case "www.roblox.com":
-        if (parseInt(hour) > 8 && parseInt(hour) < 20) {
-            document.head.innerHTML = generateSTYLES();
-            document.body.innerHTML = generateHTML("ROBLOX");
-            break;
-        }
-    case "discord.com":
-        if (parseInt(hour) > 8 && parseInt(hour) < 20) {
-            document.head.innerHTML = generateSTYLES();
-            document.body.innerHTML = generateHTML("DISCORD");
-            break;
-        }
-    case "www.spotify.com":
-        if (parseInt(hour) > 8 && parseInt(hour) < 20) {
-            document.head.innerHTML = generateSTYLES();
-            document.body.innerHTML = generateHTML("SPOTIFY");
-            break;
-        }
 }

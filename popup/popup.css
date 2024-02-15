@@ -1,0 +1,8 @@
+body{
+    width:600px; height:500px;
+    height: 100%;
+    background-image: linear-gradient(to top left, #00BFFF, #008B8B)
+}
+title strong-weight {
+    color: white;
+}
